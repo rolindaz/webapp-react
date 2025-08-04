@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer>
+        <footer className="p-5">
             <div className="social">
                 <span>
                     Share this page with your friends and followers
