@@ -1,12 +1,14 @@
-# React + Vite
+# Movies App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Obiettivo: creare un'applicazione web per la visualizzazione di una lista di film proveniente dal database già creato nell'esercizio precedente, con la possibilità di visualizzare anche una pagina di dettaglio per ogni singolo film.
+Le informazioni da visualizzare sono: titolo, regista, genere, anno di uscita, trama e immagine, più le recensioni associate ad ogni film.
 
-Currently, two official plugins are available:
+Siti di ispirazione: 
+https://www.imdb.com/
+https://simkl.com/movies/
+https://www.metacritic.com/movie/the-naked-gun/
+https://letterboxd.com/film/superman-2025/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Struttura React:
+Pagine: Homepage con lista film e pagina di dettaglio film individuale
+Componenti: Header e Footer; Film card; Lista film
