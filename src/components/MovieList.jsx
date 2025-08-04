@@ -3,15 +3,16 @@ import MovieCard from "./MovieCard";
 
 export default function MovieList() {
 
-    const movies = useGlobalContext()
+    const { movies } = useGlobalContext()
 
     return (
         <div className="container">
-            <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4">
+            <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 row-gap-4">
                 {
-                    movies &&
                     movies.map((movie) => {
-                        <MovieCard key={movie.id} movie={movie} />
+                        return (
+                            <MovieCard key={movie.id} movie={movie} />
+                        )
                     })
                 }
             </div>

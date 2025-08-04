@@ -33,7 +33,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="col-md-4">
-                        <img src="" className="img-fluid rounded-start" alt="QR Code" />
+                        <img src="https://m.media-amazon.com/images/G/01/IMDb/Mobile/DesktopQRCode-png.png" className="img-fluid rounded-start" alt="QR Code" />
                     </div>
                 </div>
             </div>

@@ -1,20 +1,24 @@
 export default function MovieCard({ movie }) {
     return (
         <div className="col">
-            <div className="card">
+            <div className="card h-100">
                 <div className="card-top">
-                    <img src={``} alt={movie.title} />
+                    <img src={`http://localhost:3020/${movie.image}`} alt={movie.title} className="w-100 h-100" />
                 </div>
-                <div className="card-bottom">
-                    <ul>
+                <div className="card-bottom p-3 d-flex flex-column">
+                    <ul className="list-unstyled">
                         <li>
-                            {movie.title}
+                            <h4>
+                                {movie.title}
+                            </h4>
                         </li>
-                        <li>
-                            {movie.release_year}
-                        </li>
-                        <li>
-                            Vote
+                        <li className="d-flex justify-content-between">
+                            <span>
+                                Vote
+                            </span>
+                            <span>
+                                {movie.release_year}
+                            </span>
                         </li>
                         <li>
                             {movie.genre}

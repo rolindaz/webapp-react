@@ -2,29 +2,25 @@ import { use } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import MovieList from "../components/MovieList";
-import { useGlobalContext } from "../contexts/GlobalContext";
 
 export default function HomePage() {
 
-    const movies = useGlobalContext()
 
     return (
         <>
             <Header />
             <main>
-                <div className="p-5 mb-4 bg-light rounded-3">
+                <div className="jumbotron p-5 mb-4 bg-light text-white d-flex align-items-center">
                     <div className="container-fluid py-5">
                         <h1 className="display-5 fw-bold">
                             Welcome to CineManiac
                         </h1>
                         <p className="col-md-8 fs-4">
-                            Using a series of utilities, you can create this jumbotron, just
-                            like the one in previous versions of Bootstrap. Check out the
-                            examples below for how you can remix and restyle it to your liking.
+                            Get lost in a world of movies.
                         </p>
                     </div>
                 </div>
-                <MovieList movies={movies} />
+                <MovieList />
             </main>
             <Footer />
         </>

@@ -9,7 +9,7 @@ export default function MoviePage() {
                 <div className="card mb-3" style="max-width: 540px;">
                     <div className="row g-0">
                         <div className="col-md-4">
-                            <img src="..." className="img-fluid rounded-start" alt="..." />
+                            <img src="https://a.ltrbxd.com/resized/film-poster/9/5/7/0/5/0/957050-superman-2025-0-230-0-345-crop.jpg?v=54e41a55ff" className="img-fluid rounded-start" alt="..." />
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">

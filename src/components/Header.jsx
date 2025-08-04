@@ -2,7 +2,7 @@ import Logo from '../assets/logo.jpg'
 
 export default function Header() {
     return (
-        <header className='d-flex p-4 align-items-center'>
+        <header className='bg-white d-flex py-2 px-5 align-items-center'>
             <div className="logo">
                 <img src={Logo} alt="CineManiac Logo" />
             </div>

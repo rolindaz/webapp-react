@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(88, 20, 20);
+}
+
 img {
   max-height: 100%;
   vertical-align: middle;
@@ -16,4 +20,36 @@ img {
   img {
     width: 5%;
   }
+}
+
+.jumbotron {
+  background-image: url('./assets/projector.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+
+.card-top {
+  height: 70%;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.genre-scifi {
+  background-color: aquamarine;
+}
+
+.genre-action {
+  background-color: brown;
+}
+
+.genre-romance {
+  background-color: rgb(235, 87, 233);
+}
+
+.genre-crime {
+  background-color: rgb(254, 239, 74);
 }
