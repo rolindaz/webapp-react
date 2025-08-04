@@ -20,7 +20,9 @@ export default function MovieCard() {
                             Genre Tag
                         </li>
                     </ul>
-                    <button className="btn btn-primary"></button>
+                    <button className="btn btn-primary">
+                        View details
+                    </button>
                 </div>
             </div>
         </div>
