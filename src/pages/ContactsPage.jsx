@@ -1,8 +1,7 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import MovieList from "../components/MovieList";
 
-export default function HomePage() {
+export default function ContactsPage() {
     return (
         <>
             <Header />
@@ -10,7 +9,7 @@ export default function HomePage() {
                 <div className="p-5 mb-4 bg-light rounded-3">
                     <div className="container-fluid py-5">
                         <h1 className="display-5 fw-bold">
-                            Welcome to CineManiac
+                            Contact Us
                         </h1>
                         <p className="col-md-8 fs-4">
                             Using a series of utilities, you can create this jumbotron, just
@@ -19,7 +18,6 @@ export default function HomePage() {
                         </p>
                     </div>
                 </div>
-                <MovieList />
             </main>
             <Footer />
         </>
