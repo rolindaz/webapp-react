@@ -5,21 +5,21 @@ const GlobalContext = createContext()
 function GlobalProvider({ children }) {
 
     const apiUrl = 'http://localhost:3020/api/movies'
-    const [movieList, setMovieList] = useState(null)
+    const [movies, setMovies] = useState([])
 
     useEffect(() => {
         fetch(apiUrl)
             .then(res => res.json())
             .then(data => {
-                setMovieList(data)
+                setMovies(data)
             })
     }, [])
 
-    console.log(movieList);
+    console.log(movies);
     return (
         <GlobalContext.Provider value={{
-            movieList,
-            setMovieList
+            movies,
+            setMovies
         }}>
             {children}
         </GlobalContext.Provider>

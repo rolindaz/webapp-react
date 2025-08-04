@@ -1,8 +1,13 @@
+import { use } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import MovieList from "../components/MovieList";
+import { useGlobalContext } from "../contexts/GlobalContext";
 
 export default function HomePage() {
+
+    const movies = useGlobalContext()
+
     return (
         <>
             <Header />
@@ -19,7 +24,7 @@ export default function HomePage() {
                         </p>
                     </div>
                 </div>
-                <MovieList />
+                <MovieList movies={movies} />
             </main>
             <Footer />
         </>

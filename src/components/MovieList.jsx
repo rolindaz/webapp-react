@@ -1,10 +1,19 @@
+import { useGlobalContext } from "../contexts/GlobalContext";
 import MovieCard from "./MovieCard";
 
 export default function MovieList() {
+
+    const movies = useGlobalContext()
+
     return (
         <div className="container">
             <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4">
-                <MovieCard />
+                {
+                    movies &&
+                    movies.map((movie) => {
+                        <MovieCard key={movie.id} movie={movie} />
+                    })
+                }
             </div>
         </div>
     )

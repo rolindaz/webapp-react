@@ -1,23 +1,23 @@
-export default function MovieCard() {
+export default function MovieCard({ movie }) {
     return (
         <div className="col">
             <div className="card">
                 <div className="card-top">
-                    <img src="" alt="" />
+                    <img src={``} alt={movie.title} />
                 </div>
                 <div className="card-bottom">
                     <ul>
                         <li>
-                            Title
+                            {movie.title}
                         </li>
                         <li>
-                            Year
+                            {movie.release_year}
                         </li>
                         <li>
                             Vote
                         </li>
                         <li>
-                            Genre Tag
+                            {movie.genre}
                         </li>
                     </ul>
                     <button className="btn btn-primary">
