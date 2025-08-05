@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom"
+
 export default function MovieCard({ movie }) {
     return (
         <div className="col">
             <div className="card h-100">
                 <div className="card-top">
-                    <img src={`http://localhost:3020/${movie.image}`} alt={movie.title} className="w-100 h-100" />
+                    <img src={`${import.meta.env.VITE_BACKEND_API_SERVER}/${movie.image}`} alt={movie.title} className="w-100 h-100" />
                 </div>
                 <div className="card-bottom p-3 d-flex flex-column">
                     <ul className="list-unstyled">
@@ -24,9 +26,11 @@ export default function MovieCard({ movie }) {
                             {movie.genre}
                         </li>
                     </ul>
-                    <button className="btn btn-primary">
-                        View details
-                    </button>
+                    <Link to={`/movies/${movie.id}`}>
+                        <button className="btn btn-primary">
+                            View details
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>

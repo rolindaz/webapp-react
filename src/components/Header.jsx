@@ -7,11 +7,11 @@ export default function Header() {
                 <img src={Logo} alt="CineManiac Logo" />
             </div>
             <nav className='d-flex column-gap-3'>
-                <a className="nav-item nav-link active" href="#" aria-current="page">
+                <a className="nav-item nav-link active" href="/" aria-current="page">
                     Home
                     <span className="visually-hidden">(current)</span>
                 </a>
-                <a className="nav-item nav-link" href="/ContactsPage">
+                <a className="nav-item nav-link" href="/contact-us">
                     Contacts
                 </a>
             </nav>

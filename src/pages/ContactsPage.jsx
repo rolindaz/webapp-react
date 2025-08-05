@@ -4,7 +4,6 @@ import Header from "../components/Header";
 export default function ContactsPage() {
     return (
         <>
-            <Header />
             <main>
                 <div className="p-5 mb-4 bg-light rounded-3">
                     <div className="container-fluid py-5">
@@ -19,7 +18,6 @@ export default function ContactsPage() {
                     </div>
                 </div>
             </main>
-            <Footer />
         </>
     )
 }

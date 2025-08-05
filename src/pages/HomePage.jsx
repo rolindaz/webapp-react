@@ -8,7 +8,6 @@ export default function HomePage() {
 
     return (
         <>
-            <Header />
             <main>
                 <div className="jumbotron p-5 mb-4 bg-light text-white d-flex align-items-center">
                     <div className="container-fluid py-5">
@@ -22,7 +21,6 @@ export default function HomePage() {
                 </div>
                 <MovieList />
             </main>
-            <Footer />
         </>
     )
 }
